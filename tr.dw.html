@@ -1,28 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sorveteria SB</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <!-- Seu CSS -->
     <link rel="stylesheet" href="tr.dw.css">
 </head>
 
 <body>
     <div class="container">
+        <!-- Cabeçalho -->
         <div class="pai1">
             <div class="pai2">
                 <div class="imagem">
                     <img src="Logo de Sorveteria SB.png" alt="Logo de Sorveteria SB">
                 </div>
             </div>
-            <div class="pai3">
-                
+        </div>
+
+        <!-- Carrossel -->
+        <div class="pai3">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="im1.jpg" alt="Primeiro slide">
+                    </div>
+                    
+                </div>
+
+                <!-- Controles -->
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
             </div>
         </div>
     </div>
 
-    <!-- Include JavaScript file here -->
+
+    <!-- Seu JS -->
     <script src="tr.dw.js"></script>
 </body>
 

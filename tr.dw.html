@@ -4,21 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sorveteria SB</title>
+    <title>Carrossel Funcional</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-
-    <!-- Seu CSS -->
-    <link rel="stylesheet" href="tr.dw.css">
 </head>
 
 <body>
+
     <div class="container">
-        <!-- Cabeçalho -->
         <div class="pai1">
             <div class="pai2">
                 <div class="imagem">
@@ -27,33 +21,54 @@
             </div>
         </div>
 
-        <!-- Carrossel -->
         <div class="pai3">
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div id="meuCarrosselFuncional" class="carousel slide" data-bs-ride="carousel">
+
                 <div class="carousel-inner">
+
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="im1.jpg" alt="Primeiro slide">
+                        <img src="./im1.jpg" class="d-block w-100" alt="Primeira imagem de sorvete">
                     </div>
-                    
+
+                    <div class="carousel-item">
+                        <img src="./ima2.jpg" class="d-block w-100" alt="Segunda imagem de sorvete">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="./ima3.jpg" class="d-block w-100" alt="Terceira imagem de sorvete">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./ima4.jpg" class="d-block w-100" alt="Quarta  imagem de sorvete">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./ima5.jpg" class="d-block w-100" alt="Queinta imagem de sorvete">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./ima6.jpg" class="d-block w-100" alt="Sexta imagem de sorvete">
+                    </div>
                 </div>
 
-                <!-- Controles -->
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#meuCarrosselFuncional"
+                    data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Anterior</span>
-                </a>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
 
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#meuCarrosselFuncional"
+                    data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Próximo</span>
-                </a>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+
             </div>
         </div>
     </div>
 
 
-    <!-- Seu JS -->
-    <script src="tr.dw.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

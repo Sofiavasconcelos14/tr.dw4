@@ -1,5 +1,5 @@
 .container {
-  height: 4000px;
+  height: 100%;
   width: 100%;
   background-color: #002b63;
   display: flex;
@@ -20,7 +20,7 @@
   width: 1500px;
   background-color: #1c467e;
   display: flex;
-  justify-content:; 
+  
   align-items: center;
 }
 
@@ -48,7 +48,7 @@
   align-items: center;
 }
 
-.carousel.slide {
+.carousel-item active {
   height: 500px;
   width: 500px;
   display: flex;
@@ -62,4 +62,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Correção para garantir que o carrossel se comporte como bloco */
+.carousel-item {
+  display: block !important;
+}
+
+/* Garante que as imagens preencham a largura e a altura seja automática */
+.carousel-inner img {
+  width: 100%;
+  height: auto;
 }
